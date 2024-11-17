@@ -28,6 +28,7 @@ const corsOptions = {
 
 
 
+
 //connect to db
 mongoose.connect(process.env.MONGO_URI || 2000)
   .then(() => {
