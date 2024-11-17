@@ -18,13 +18,17 @@ app.use((req, res, next) => {
 
 app.use(cors());
 
+
+
+
 const corsOptions = {
   origin: "https://localhost:3000/", // frontend URI (ReactJS)
 }
 
 
-
-//routes
+// Routes
+app.use('/api/auth', require('./routes/auth'));
+app.use('/api/protected', require('./routes/protectedRoutes'));
 
 
 
@@ -46,3 +50,6 @@ mongoose.connect(process.env.MONGO_URI || 2000)
 
 
 
+
+
+  
