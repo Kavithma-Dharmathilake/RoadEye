@@ -12,6 +12,7 @@ import Page from './components/Page';
 import MaintenanceAppointments from './pages/maintenance/MaintenanceAppointments';
 import MaintenanceDashboard from './pages/maintenance/MaintenanceDashboard';
 import SetOpeningHours from './pages/maintenance/SetOpeningHours';
+import EmergencyRequests from './pages/maintenance/EmergencyRequest';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import LandingPage from './pages/public/LandingPage';
@@ -27,6 +28,7 @@ function App() {
       <Route path="/MaintenanceAppointments" element={<MaintenanceAppointments/>} />
       <Route path="/MaintenanceDashboard" element={<MaintenanceDashboard/>} />
       <Route path="/SetOpeningHours" element={<SetOpeningHours/>} />
+      <Route path="/EmergencyRequests" element={<EmergencyRequests/>} />
       
 
       {/* Protected Routes */}

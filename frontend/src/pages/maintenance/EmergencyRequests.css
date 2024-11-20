@@ -1,0 +1,89 @@
+/* General styles for the page */
+.main-layout {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding-bottom: 50px;
+  }
+  
+  .main-content {
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #08306b;
+  }
+  
+  /* Style for emergency cards */
+  .emergency-card {
+    cursor: pointer;
+    border: 1px solid #dc3545;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .emergency-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #dc3545;
+  }
+  
+  .card-subtitle {
+    font-size: 14px;
+    color: #6c757d;
+  }
+  
+  .card-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .view-details-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .view-details-btn:hover {
+    background-color: #c82333;
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 767px) {
+    .card-body {
+      padding: 15px;
+    }
+  
+    .view-details-btn {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  
+  /* Modal styling */
+  .modal-content {
+    border-radius: 15px;
+    background-color: #f8f9fa;
+  }
+  
+  .modal-header {
+    border-bottom: 2px solid #dc3545;
+  }
+  
+  .modal-footer button {
+    border-radius: 20px;
+  }
+  
