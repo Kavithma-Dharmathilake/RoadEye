@@ -23,7 +23,10 @@ const NavigationBar = () => {
           <i className="bi bi-calendar-check-fill me-2"></i> Appointments
         </Nav.Link>
         <Nav.Link href="/SetOpeningHours" className="text-white">
-          <i className="bi bi-bar-chart-fill me-2"></i> Open Hours
+          <i className="bi bi-clock-fill me-2"></i> Open Hours
+        </Nav.Link>
+        <Nav.Link href="/EmergencyRequests" className="text-white">
+          <i className="bi bi-exclamation-triangle-fill me-2"></i> Emergency Requests
         </Nav.Link>
         <Nav.Link href="/settings" className="text-white">
           <i className="bi bi-gear-fill me-2"></i> Settings
