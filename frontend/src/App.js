@@ -9,6 +9,9 @@ import CompanyPage from './pages/CompanyPage';
 import DriverPage from './pages/DriverPage';
 import MaintenancePage from './pages/MaintenancePage';
 import Page from './components/Page';
+import MaintenanceAppointments from './pages/maintenance/MaintenanceAppointments';
+import MaintenanceDashboard from './pages/maintenance/MaintenanceDashboard';
+import SetOpeningHours from './pages/maintenance/SetOpeningHours';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import LandingPage from './pages/public/LandingPage';
@@ -21,6 +24,9 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/page" element={<Page />} />
+      <Route path="/MaintenanceAppointments" element={<MaintenanceAppointments/>} />
+      <Route path="/MaintenanceDashboard" element={<MaintenanceDashboard/>} />
+      <Route path="/SetOpeningHours" element={<SetOpeningHours/>} />
       
 
       {/* Protected Routes */}

@@ -1,0 +1,42 @@
+.side-nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* Fixed width for the sidebar */
+    height: 100vh;
+    background-color: #0b3d91; /* Dark Blue */
+    display: flex;
+    flex-direction: column;
+    color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it stays on top of other content */
+  }
+  
+  .profile-section {
+    background-color: #08306b; /* Slightly darker blue */
+    padding: 20px 10px;
+    border-bottom: 1px solid #06407a;
+    text-align: center;
+  }
+  
+  .profile-icon {
+    font-size: 4rem;
+    margin-bottom: 10px;
+  }
+  
+  .nav-links {
+    margin-top: 20px;
+  }
+  
+  .nav-links .nav-link {
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    color: white;
+  }
+  
+  .nav-links .nav-link:hover {
+    background-color: #06407a;
+  }
+  
