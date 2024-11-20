@@ -22,6 +22,7 @@ router.post(
       "Police",
       "Company",
       "Driver",
+      "Maintenance"
     ]),
   ],
   async (req, res) => {

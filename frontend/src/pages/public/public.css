@@ -1,0 +1,68 @@
+.app-container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  .app-container .landing-container {
+    padding: 20px 20px;
+    flex: 100%;
+  }
+  
+  .app-container .component-container {
+    flex: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #37b6c3 60%, #088295 60% 90%, #001f40 90%);
+  }
+  
+  .app-container .component-container .component-content {
+    padding: 40px 40px;
+    margin: 40px 0;
+    min-width: 340px;
+    max-width: 600px;
+    min-height: 240px;
+    background: #fff;
+    border-radius: 40px;
+    box-shadow: 0 0 23px #0008;
+  }
+  
+  header {
+    position: sticky;
+    top: 0;
+    padding: 10px 80px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 2px #0004;
+    z-index: 9;
+    align-items: center;
+  }
+  
+  header img.logo {
+    cursor: pointer;
+    height: 38px;
+  }
+  
+  header .nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  header .nav a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 400ms;
+  }
+  
+  header .nav a:hover {
+    color: #006dab;
+  }
+  

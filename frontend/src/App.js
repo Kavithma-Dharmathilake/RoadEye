@@ -7,12 +7,21 @@ import AdminPage from './pages/AdminPage';
 import PolicePage from './pages/PolicePage';
 import CompanyPage from './pages/CompanyPage';
 import DriverPage from './pages/DriverPage';
+import MaintenancePage from './pages/MaintenancePage';
+import Page from './components/Page';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import LandingPage from './pages/public/LandingPage';
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Login />} />
+      {/* public componenets */}
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
+      <Route path="/page" element={<Page />} />
+      
 
       {/* Protected Routes */}
       <Route
@@ -47,7 +56,27 @@ function App() {
           </ProtectedRoute>
         }
       />
+
+      <Route
+        path="/maintain"
+        element={
+          <ProtectedRoute allowedRoles={['Maintenance']}>
+            <MaintenancePage />
+          </ProtectedRoute>
+        }
+      />
+
+
+      <Route
+        path="/sparepart"
+        element={
+          <ProtectedRoute allowedRoles={['Sparepart']}>
+            <DriverPage />
+          </ProtectedRoute>
+        }
+      />
     </Routes>
+
   );
 }
 

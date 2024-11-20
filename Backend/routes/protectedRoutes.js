@@ -18,6 +18,16 @@ router.get(
   }
 );
 
+// Maintain route
+router.get(
+  "/maintain",
+  authMiddleware,
+  roleMiddleware(["MaintenancePage"]),
+  (req, res) => {
+    res.send("Welcome Maintainenance");
+  }
+);
+
 // Company route
 router.get(
   "/company",

@@ -45,6 +45,12 @@ function Register() {
         case 'Driver':
           navigate('/driver');
           break;
+        case 'Maintenance':
+          navigate('/maintain');
+          break;
+        case 'Sparepart':
+          navigate('/sparepart');
+          break;
         default:
           navigate('/');
       }
@@ -93,6 +99,8 @@ function Register() {
           <option value="Police">Police</option>
           <option value="Company">Company</option>
           <option value="Driver">Driver</option>
+          <option value="Maintenance">Maintenance Provider</option>
+          <option value="Sparepart">Spare Part vendor</option>
         </select>
         <br />
         <button type="submit">Register</button>

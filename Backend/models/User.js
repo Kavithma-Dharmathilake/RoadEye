@@ -16,7 +16,7 @@ const UserSchema = new mongoose.Schema({
   },
   role: {
     type: String,
-    enum: ['Admin', 'Police', 'Company', 'Driver'], // Allowed roles
+    enum: ['Admin', 'Police', 'Company', 'Driver', 'Maintenance', 'Sparepart'], // Allowed roles
     default: 'Driver',
   },
   date: {
