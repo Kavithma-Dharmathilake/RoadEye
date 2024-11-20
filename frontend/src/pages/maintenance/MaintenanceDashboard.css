@@ -1,0 +1,121 @@
+/* Styling for dashboard cards */
+.dashboard-card {
+    background-color: #0b3d91; /* Dark blue */
+    color: white; /* Ensure text color inside the card is white */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Set a fixed height for uniform card sizes */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Force card-body content to have white text */
+.dashboard-card .card-body {
+    color: white !important; /* Ensure text is white in card body */
+}
+
+/* Ensure number and text inside cards are white */
+.dashboard-card .card-number, 
+.dashboard-card p {
+    color: white !important; /* Ensuring both are white */
+}
+
+/* Hover effect for cards */
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-number {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-right: 10px;
+}
+
+.card-heading {
+    background-color: #08306b; /* Dark blue */
+    color: white;
+    text-align: center;
+}
+
+/* Styling for recent appointments table */
+.table th {
+    background-color: #0b3d91; /* Dark blue */
+    color: white;
+    text-align: center;
+}
+
+.table tbody tr:hover {
+    background-color: #f0f8ff;
+    cursor: pointer;
+}
+
+/* Custom calendar container */
+.fc {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.main-layout {
+    display: flex;
+}
+
+.main-content {
+    margin-left: 250px; /* Sidebar width */
+    padding: 20px;
+    width: calc(100% - 250px); /* Adjust to available space */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+/* Align the FullCalendar toolbar elements */
+.fc-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Ensure the title (month name) stays centered */
+.fc-toolbar-title {
+    font-size: 18px; /* Reduced font size for the month title */
+    text-align: center;
+    flex-grow: 1;
+    color: #0b3d91; /* Dark blue */
+}
+
+/* Style for navigation buttons (prev/next month) */
+.fc-button {
+    font-size: 14px;
+    padding: 5px 10px;
+    margin: 0 5px; /* Add margin to space out buttons */
+}
+
+/* "Today" button */
+.fc-button.fc-button-today {
+    font-size: 14px;
+    padding: 5px 10px;
+    margin: 0 5px; /* Add margin to space out buttons */
+}
+
+/* Fix the layout of toolbar buttons */
+.fc-toolbar > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.fc-prev-button, .fc-next-button {
+    margin-left: 5px;
+    margin-right: 5px;
+}
