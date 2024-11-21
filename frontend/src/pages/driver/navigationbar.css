@@ -1,0 +1,94 @@
+/* Side Navigation Bar Styling */
+.side-nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px; /* Keeping the original width */
+  height: 100vh; /* Full height */
+  background: linear-gradient(180deg, #0d4e8e, #06407a); 
+  display: flex;
+  flex-direction: column;
+  color: white;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  padding-top: 20px; /* Adds some space from the top */
+  margin: 0; /* Removes unnecessary spacing */
+  overflow-y: auto; /* Adds vertical scroll if content overflows */
+  scrollbar-width: thin; /* For Firefox: Makes the scrollbar thinner */
+}
+
+/* Profile Section Styling */
+.profile-section {
+  background-color: #0d4e8e; /* Slightly darker blue */
+  padding: 20px 10px;
+  border-bottom: 2px solid #06407a;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.profile-icon {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.profile-section h5 {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.profile-section p {
+  font-size: 0.85rem;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Increases space between buttons */
+  margin-top: 0; /* Reduces unnecessary spacing */
+}
+
+.nav-links .nav-link {
+  font-size: 1.1rem;
+  padding: 10px 15px; /* Keeping the original padding size */
+  border-radius: 5px; /* Rounded corners */
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  color: white;
+  font-weight: 500;
+}
+
+.nav-links .nav-link:hover {
+  background-color: #06407a; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight zoom effect for hover */
+}
+
+/* Icon spacing */
+.nav-links .nav-link i {
+  font-size: 1.3rem;
+}
+
+/* Optional: Add a subtle effect for active links */
+.nav-links .nav-link.active {
+  background-color: #0d4e8e;
+  border-left: 4px solid #ff6347; /* Highlight active link with a colored border */
+}
+
+/* Scrollbar Styling */
+.side-nav-container::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.side-nav-container::-webkit-scrollbar-thumb {
+  background-color: #06407a; /* Scrollbar color */
+  border-radius: 5px; /* Rounded edges */
+}
+
+.side-nav-container::-webkit-scrollbar-thumb:hover {
+  background-color: #0d4e8e; /* Darker shade on hover */
+}
+
+.side-nav-container::-webkit-scrollbar-track {
+  background-color: transparent; /* Track background */
+}
