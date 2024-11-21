@@ -1,0 +1,329 @@
+/* Styling for dashboard cards */
+.dashboard-card {
+    background-color: #0b3d91; /* Dark blue */
+    color: white; /* Ensure text color inside the card is white */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Set a fixed height for uniform card sizes */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Force card-body content to have white text */
+.dashboard-card .card-body {
+    color: white !important; /* Ensure text is white in card body */
+}
+
+/* Ensure number and text inside cards are white */
+.dashboard-card .card-number, 
+.dashboard-card p {
+    color: white !important; /* Ensuring both are white */
+}
+
+/* Hover effect for cards */
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-number {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-right: 10px;
+}
+
+.card-heading {
+    background-color: #08306b; /* Dark blue */
+    color: white;
+    text-align: center;
+}
+
+/* Styling for recent appointments table */
+.table th {
+    background-color: #0b3d91; /* Dark blue */
+    color: white;
+    text-align: center;
+}
+
+.table tbody tr:hover {
+    background-color: #f0f8ff;
+    cursor: pointer;
+}
+
+/* Custom calendar container */
+.fc {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.main-layout {
+    display: flex;
+}
+
+.main-content {
+    margin-left: 250px; /* Sidebar width */
+    padding: 20px;
+    width: calc(100% - 250px); /* Adjust to available space */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+/* Align the FullCalendar toolbar elements */
+.fc-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Ensure the title (month name) stays centered */
+.fc-toolbar-title {
+    font-size: 18px; /* Reduced font size for the month title */
+    text-align: center;
+    flex-grow: 1;
+    color: #0b3d91; /* Dark blue */
+}
+
+/* Style for navigation buttons (prev/next month) */
+.fc-button {
+    font-size: 14px;
+    padding: 5px 10px;
+    margin: 0 5px; /* Add margin to space out buttons */
+}
+
+/* "Today" button */
+.fc-button.fc-button-today {
+    font-size: 14px;
+    padding: 5px 10px;
+    margin: 0 5px; /* Add margin to space out buttons */
+}
+
+/* Fix the layout of toolbar buttons */
+.fc-toolbar > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.fc-prev-button, .fc-next-button {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+/* Global CSS for the content layout */
+.main-layout {
+    display: flex;/* Global Layout */
+    .main-layout {
+        display: flex;
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove default padding */
+        height: 100vh; /* Full viewport height */
+        overflow: hidden; /* Prevent scrolling at layout level */
+    }
+    
+    /* Content beside the navigation bar */
+    .main-content {
+        margin-left: 250px; /* Matches .side-nav-container width */
+        padding: 20px; /* Optional padding for spacing */
+        flex-grow: 1; /* Allow content to take remaining space */
+        overflow-y: auto; /* Enable vertical scrolling */
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+        background-color: #f9f9f9; /* Light background for content area */
+    }
+    
+    /* Side Navigation Bar */
+    .side-nav-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px; /* Fixed width for the sidebar */
+        height: 100vh; /* Full height */
+        background: linear-gradient(180deg, #0d4e8e, #06407a); /* Gradient background */
+        z-index: 1000; /* Ensure it stays on top */
+        overflow-y: auto; /* Add scroll for overflowing navigation links */
+        padding: 0; /* Remove padding */
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    }
+    
+    /* Profile Section in Navigation Bar */
+    .profile-section {
+        background-color: #0d4e8e; /* Slightly darker blue */
+        padding: 20px 10px;
+        border-bottom: 2px solid #06407a;
+        text-align: center;
+        margin-bottom: 15px; /* Slight spacing from navigation links */
+    }
+    
+    .profile-icon {
+        font-size: 4rem;
+        margin-bottom: 10px;
+    }
+    
+    .profile-section h5 {
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    
+    .profile-section p {
+        font-size: 0.85rem;
+    }
+    
+    /* Navigation Links */
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 15px; /* Space between links */
+        margin-top: 15px; /* Adds margin above the navigation links */
+    }
+    
+    .nav-links .nav-link {
+        font-size: 1.1rem;
+        padding: 10px 15px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        color: white;
+        font-weight: 500;
+        text-decoration: none;
+    }
+    
+    .nav-links .nav-link:hover {
+        background-color: #06407a; /* Darker shade on hover */
+        transform: scale(1.05); /* Subtle zoom effect */
+    }
+    
+    /* Optional: Add subtle effect for active links */
+    .nav-links .nav-link.active {
+        background-color: #0d4e8e;
+        border-left: 4px solid #ff6347; /* Highlight active link */
+    }
+    
+    /* Icon Spacing */
+    .nav-links .nav-link i {
+        font-size: 1.3rem;
+        margin-right: 10px; /* Space between icon and text */
+    }
+    
+    /* Dashboard Cards */
+    .dashboard-card {
+        background-color: #0b3d91; /* Dark blue */
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px; /* Fixed height */
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .dashboard-card .card-body {
+        color: white !important; /* Ensure text is white */
+    }
+    
+    .dashboard-card .card-number,
+    .dashboard-card p {
+        color: white !important;
+    }
+    
+    .dashboard-card:hover {
+        transform: translateY(-5px); /* Lift on hover */
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card-number {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    .card-icon {
+        font-size: 2.5rem;
+        margin-right: 10px;
+    }
+    
+    .card-heading {
+        background-color: #08306b;
+        color: white;
+        text-align: center;
+    }
+    
+    /* Recent Appointments Table */
+    .table th {
+        background-color: #0b3d91; /* Dark blue */
+        color: white;
+        text-align: center;
+    }
+    
+    .table tbody tr:hover {
+        background-color: #f0f8ff;
+        cursor: pointer;
+    }
+    
+    /* FullCalendar Toolbar */
+    .fc-toolbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .fc-toolbar-title {
+        font-size: 18px; /* Reduced font size for the month title */
+        text-align: center;
+        flex-grow: 1;
+        color: #0b3d91;
+    }
+    
+    .fc-button {
+        font-size: 14px;
+        padding: 5px 10px;
+        margin: 0 5px;
+    }
+    
+    .fc-prev-button,
+    .fc-next-button {
+        margin: 0 5px;
+    }
+    
+    /* Box-Sizing for Global Consistency */
+    * {
+        box-sizing: border-box;
+    }
+    
+    /* Debugging Background Colors (optional for identifying issues) */
+    /* Uncomment if needed
+    .main-layout {
+        background: #e3e3e3;
+    }
+    
+    .main-content {
+        background: #fff;
+    }
+    
+    .side-nav-container {
+        background: #0b3d91;
+    }
+    */
+    
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+}
+
+/* Content container beside the navigation bar */
+.main-content {
+    margin-left: 250px; /* Matches the width of the .side-nav-container */
+    padding: 20px; /* Optional padding for spacing inside the content */
+    width: calc(100% - 250px); /* Adjust width to fill the remaining space */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
