@@ -15,8 +15,10 @@ import SetOpeningHours from './pages/maintenance/SetOpeningHours';
 import EmergencyRequests from './pages/maintenance/EmergencyRequest';
 import DriverDashboard from './pages/driver/DriverDashboard';
 import DriverAppointments from './pages/driver/DriverAppointments';
-import BookAppointment from './pages/driver/BookAppointment';
+import DriverVehicles from './pages/driver/DriverVehicles';
+import ComplaintsPage from './pages/driver/Complaints';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 import LandingPage from './pages/public/LandingPage';
 
@@ -34,7 +36,9 @@ function App() {
       <Route path="/EmergencyRequests" element={<EmergencyRequests/>} />
       <Route path="/DriverDashboard" element={<DriverDashboard/>} />
       <Route path="/DriverAppointments" element={<DriverAppointments/>} />
-      <Route path="/BookAppointments" element={<BookAppointment/>} />
+      <Route path="/DriverVehicles" element={<DriverVehicles/>} />
+      <Route path="/Complaints" element={<ComplaintsPage/>} />
+
       
 
       {/* Protected Routes */}
