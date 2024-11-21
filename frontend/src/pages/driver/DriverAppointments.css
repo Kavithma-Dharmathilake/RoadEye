@@ -1,0 +1,64 @@
+/* Appointment Rows Hover Effect */
+.appointment-row {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.appointment-row:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Table Header Styling */
+.appointment-table th {
+  background-color: #08306b;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+/* Table Row Hover Effect */
+.appointment-table tbody tr:hover {
+  background-color: #f0f8ff;
+}
+
+/* Section Headings */
+.section-heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #06407a;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Tabs Styling */
+.nav-tabs {
+  border-bottom: 2px solid #08306b;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-tabs .nav-item .nav-link {
+  color: #08306b;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+  background: linear-gradient(135deg, #06407a, #0b3d91);
+  color: white !important;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.nav-tabs .nav-item .nav-link:hover {
+  background-color: #d9ecff;
+  transform: scale(1.02);
+}
+
+/* Global Font */
+body {
+  font-family: 'Poppins', sans-serif;
+}
