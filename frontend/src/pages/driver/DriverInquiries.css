@@ -1,0 +1,101 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* Sidebar width */
+    height: 100vh;
+    background-color: #08306b;
+    color: white;
+    z-index: 1000;
+}
+
+/* Main Content Area */
+.driver-inquiries-page {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+/* Content Area Adjustment */
+.driver-inquiries {
+    flex: 1;
+    padding: 20px;
+    margin-left: 250px; /* Adjust margin to match navbar width */
+}
+
+.content-container {
+    margin-top: 50px; /* Adjust top margin to align with other sections */
+    padding: 20px;
+}
+
+/* Heading Styling */
+.driver-inquiries h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #06407a; /* Blue color */
+    font-size: 2.5rem;
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px;
+}
+/* Table Styling */
+.notification-table {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.notification-table th {
+    background-color: #08306b; /* Dark blue header */
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+}
+
+.notification-table td {
+    font-size: 14px;
+    text-align: left; /* Left-align table data */
+    padding: 12px;
+}
+
+.notification-row:hover {
+    background-color: #f0f8ff;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    transform: scale(1.02);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal Styling */
+.modal-header {
+    background-color: #08306b;
+    color: white;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar {
+        position: relative;
+        width: 100%;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .content-container {
+        margin-top: 30px; /* Adjust for smaller screens */
+    }
+}

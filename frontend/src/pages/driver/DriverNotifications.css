@@ -1,0 +1,88 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* Sidebar width */
+    height: 100vh;
+    background-color: #08306b;
+    color: white;
+    z-index: 1000;
+  }
+  
+  .main-content {
+    margin-left: 250px; /* Same width as navbar */
+    padding: 20px;
+  }
+  
+  .content-container {
+    margin-top: 50px; /* Adjusted to align similar to complaints */
+    padding: 20px;
+  }
+  
+  .section-heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #06407a;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .notification-table {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  
+  .notification-table th {
+    background-color: #08306b;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+  }
+  
+  .notification-table td {
+    font-size: 14px;
+    text-align: center;
+    padding: 12px;
+  }
+  
+  .notification-row:hover {
+    background-color: #f0f8ff;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    transform: scale(1.02);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-header {
+    background-color: #08306b;
+    color: white;
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar {
+      position: relative;
+      width: 100%;
+    }
+  
+    .main-content {
+      margin-left: 0;
+    }
+  
+    .content-container {
+      margin-top: 30px; /* Adjust for smaller screens */
+    }
+  }
+  
