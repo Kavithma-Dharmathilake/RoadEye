@@ -17,6 +17,8 @@ import DriverDashboard from './pages/driver/DriverDashboard';
 import DriverAppointments from './pages/driver/DriverAppointments';
 import DriverVehicles from './pages/driver/DriverVehicles';
 import ComplaintsPage from './pages/driver/Complaints';
+import DriverNotifications from './pages/driver/DriverNotifications';
+import DriverInquiries from './pages/driver/DriverInquiries';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -38,6 +40,9 @@ function App() {
       <Route path="/DriverAppointments" element={<DriverAppointments/>} />
       <Route path="/DriverVehicles" element={<DriverVehicles/>} />
       <Route path="/Complaints" element={<ComplaintsPage/>} />
+      <Route path="/DriverNotifications" element={<DriverNotifications/>} />
+      <Route path="/DriverInquiries" element={<DriverInquiries/>} />
+      
 
       
 
